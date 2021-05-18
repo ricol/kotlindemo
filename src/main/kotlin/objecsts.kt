@@ -22,7 +22,7 @@ fun foo()
 
 class MyClass
 {
-    companion object: Factory <MyClass>
+    companion object : Factory<MyClass>
     {
         override fun create(): MyClass = MyClass()
     }
@@ -35,7 +35,7 @@ interface Factory<T>
 
 fun main()
 {
-    val ab: A = object: A(1), B
+    val ab: A = object : A(1), B
     {
         override val y = 15
     }

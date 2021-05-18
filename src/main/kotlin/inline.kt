@@ -1,7 +1,7 @@
-inline class Name(val s: String): Printable
+inline class Name(val s: String) : Printable
 {
     val length: Int
-    get() = s.length
+        get() = s.length
 
     fun greet()
     {
@@ -14,7 +14,7 @@ inline class Name(val s: String): Printable
     }
 }
 
-interface  Printable
+interface Printable
 {
     fun prettyPrint(): String
 }
@@ -33,19 +33,39 @@ interface I
 
 inline class Foo(val i: Int) : I
 
-fun asInline(f: Foo) {}
-fun <T> asGeneric(x: T) {}
-fun asInterface(i: I) {}
-fun asNullable(i: Foo?) {}
+fun asInline(f: Foo)
+{
+}
+
+fun <T> asGeneric(x: T)
+{
+}
+
+fun asInterface(i: I)
+{
+}
+
+fun asNullable(i: Foo?)
+{
+}
 
 fun <T> id(x: T): T = x
 
 typealias NameTypeAlias = String
+
 inline class NameInlineClass(val s: String)
 
-fun acceptString(s: String) {}
-fun acceptNameTypeAlias(n: NameTypeAlias) {}
-fun acceptNameInlineClass(p: NameInlineClass) {}
+fun acceptString(s: String)
+{
+}
+
+fun acceptNameTypeAlias(n: NameTypeAlias)
+{
+}
+
+fun acceptNameInlineClass(p: NameInlineClass)
+{
+}
 
 fun main()
 {

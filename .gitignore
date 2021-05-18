@@ -1,3 +1,10 @@
 .idea
 out
 KotlinDemo.iml
+.gradle
+build
+gradle
+*.properties
+*.kts
+gradlew
+*.bat

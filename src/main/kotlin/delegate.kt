@@ -21,7 +21,7 @@ class BaseImpl(x: Int, override val msg: String) : Base
     }
 }
 
-class Derived(b: Base): Base by b
+class Derived(b: Base) : Base by b
 {
     override val msg: String
         get() = "msg in Derived"
