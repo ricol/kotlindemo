@@ -1,4 +1,4 @@
-open class A(x: Int)
+open class Oa(x: Int)
 {
     public open val y: Int = x
 }
@@ -35,7 +35,7 @@ interface Factory<T>
 
 fun main()
 {
-    val ab: A = object : A(1), B
+    val ab: Oa = object : Oa(1), B
     {
         override val y = 15
     }
